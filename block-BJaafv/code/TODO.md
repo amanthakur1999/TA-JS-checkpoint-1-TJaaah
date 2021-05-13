@@ -19,6 +19,12 @@ function sum(a, b) {
 4. Can you store the first `sum` function in a variable named `add`. If yes why? If no why?
 
 5. Declare a function named `sayHello` the accepts a parameter `name` and returns the name like `Hello Arya`.
+```js
+function sayhello(name){
+  return name
+}
+sayhello("Hello Arya")
+```
 
 6. What will be the output of the function below and why?
 
@@ -30,7 +36,7 @@ function showMessage() {
   return message;
 }
 
-showMessage();
+showMessage();// "Hello,John"
 ```
 
 7. What will be the output for `Output1` `Output2` and `Output3` in the code below.
@@ -43,11 +49,11 @@ function showMessage() {
   return message;
 }
 
-alert(userName); // Output 1
+alert(userName); // John
 
-showMessage(); // Output 2
+showMessage(); // "Hello,John"
 
-alert(userName); // Output 3
+alert(userName); //John
 ```
 
 8. What is a Anonymous Function give example of three functions.
