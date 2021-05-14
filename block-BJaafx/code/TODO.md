@@ -1,4 +1,16 @@
 1. Using loops take 10 inputs from user and find the average of all the numbers.
+```js
+let number=10
+sum=0
+for (let i=1; i<=number; i++){
+  sum+=i
+}
+let avg = sum / number
+console.log(avg)
+
+
+
+```
 
 2. What will be the output of the code below
 
@@ -7,18 +19,50 @@ let i = 0;
 while (i < 3) {
   println('hi');
   i++;
-}
+}//error printIn is not defined
 ```
 
 3. Write a function named `getEvenSum` that accepts a parameter `max`. Return the sum of all even numbers. The value of max should default to 10.
+```js
+function getEvenSum(max=10){
+  sum=0;
+  for(let i=0; i<=max; i++){
+    if(i%2==0 )
+  sum+=i
+  }
+  return sum
+}
+```
 
 4. Write a function named `getOddSum` that accepts a parameter `max`. Return the sum of all odd numbers. The value of max should default to 10.
+```js
+function getOddSum(max=10){
+  
+  sum=0;
+  for(let i=0; i<=max; i++){
+    if(i%2 !==0 )
+  sum+=i
+  }
+  return sum
+}
+getOddSum();
+```
 
 5. Write a function named `getProductOfDigits` that accepts a parameter `num`. It returns the product of all the digits in the number.
 
 - If the input value is less than 0 return `not a valid input`
 - For example if the input is `123` output should be `6`.
 
+```js
+function getProductOfDigits (num){
+  
+    if(num>0){
+      return `not a valid input`
+      }else  {
+        return num
+      }
+}
+```
 6. What will be the output of the following code below in multiple conditions? Explain with reason?
 
 ```js
@@ -34,9 +78,9 @@ function check(num) {
   return num;
 }
 
-check(10); // output
-check(1); // output
-check(5); // output
+check(10); // 'Bigger than 5
+check(1); // 'Smaller than 5'
+check(5); // 5
 ```
 
 7. What will be the output of the following code given below? Explain the reason?
@@ -48,9 +92,9 @@ function getOutput(name) {
   return 'Who are you';
 }
 
-getOutput('Arya'); // what will be the output
-getOutput('John'); // what will be the output
-getOutput(); // what will be the output
+getOutput('Arya'); // 'You are arya'
+getOutput('John'); // return 'You are john'
+getOutput(); // return 'Who are you'
 ```
 
 8. What will be the output of the following code given below? Explain the reason?
@@ -62,11 +106,15 @@ function getOutput(name) {
   return 'Who are you';
 }
 
-getOutput('Arya'); // what will be the output
-getOutput('John'); // what will be the output
-getOutput(); // what will be the output
+getOutput('Arya'); // You are arya
+getOutput('John'); // You are john
+getOutput(); // 'Who are you'
 ```
 
 9. Can a function have multiple return statement? Give one example if possible and explain the reason.
 
 10. What is the difference between `for` loop and `while` loop. What are the different place you can use them? Explain with example.
+
+I would use a for loop for the reason that I may KNOW the NUMBER OF ITERATIONS I need to do and I have an INCREMENTING variable which can be handy sometimes.
+
+I would use this loop when I am NOT SURE how many ITERATIONS I might need to carry out.
